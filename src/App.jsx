@@ -1,15 +1,14 @@
 
-import './App.css'
-import Header from './components/header/header'
-import Router from './components/navigation/router'
+import './App.css';
+import Header from './components/header/header';
+import Router from './navigation';
 
 function App() {
-  
   return (
-    <>
-      <Header logo='Sergio' />
+    <div>
+      <Header/>
       <Router/>
-    </>
+    </div>
   )
 }
 
