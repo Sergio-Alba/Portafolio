@@ -1,0 +1,10 @@
+.mode-theme{
+  height: 2rem;
+  width: 4rem;
+  color: var(--bg-light);
+  border-radius: 1rem;
+  background-color: rgb(15, 13, 30);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
