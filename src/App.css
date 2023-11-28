@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  /* background:url(./assets/background_circle.png) no-repeat ;
-  background-size:70% ;
-  background-position:center ; */
+  background-color:var(--bg-dark);
+  background-color:var(--bg-light);
   color: var(--text-principal);
 }
 ul{
@@ -19,11 +18,13 @@ a{
 
 
 :root{
-  --color-bg:#f2f7f7;
-  --bg-card:#E7CFFF;
-  --bg-btn:#00AAF2;
+  --bg-light:#ecf5f8;
+  --bg-dark:rgb(1, 13, 16);
+  --bg-card:#d5acff;
+  --bg-btn:#099ede;
   --bg-glass:#65cefb23;
-  --text-secondary-2:#00AAF2;
+  --cl-utilities:#155260;
+  --text-primary:#081e23;
   --text-secondary:#a971e2;
-  --text-primary:#171717;
+  --text-secondary-2:#00AAF2;
 }

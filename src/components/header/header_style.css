@@ -12,7 +12,7 @@
 }
 .container-logo{
   margin-top: .5rem;
-  width:50%;
+  width:40%;
 }
 .logo{
   object-fit: contain;
@@ -37,7 +37,7 @@
 .hamb span{
   height: .3rem;
   width: 100%;
-  background-color: rgb(39, 149, 185);
+  background-color:var(--cl-utilities);
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
@@ -63,8 +63,8 @@
   position: absolute;
   right: 0;
   top:6rem;
-  background:linear-gradient(#8accff1f, #b677f530, #b169f94e);
-  backdrop-filter: blur(4px);
+  background:linear-gradient(#72daf730, #0a7db642, #06335148);
+  backdrop-filter: blur(8px);
   border-radius: 0 0 0 2rem;
   overflow: hidden;
   max-height: 0;
@@ -83,24 +83,21 @@
 }
 .menu li{
   width: 70%;
-  border-radius: .5rem;
   font-size: x-large;
   font-weight: bold;
   padding: 1rem;
-  border-bottom: 2px solid #ffffff00;
   transition: all .4s ease-in-out;
   text-align: center;
 
 }
-.menu li:hover{
-  background-color:var(--bg-glass);
-  border-bottom: 2px solid var(--text-secondary-2);
-  
 
-}
 .active{
   color: var(--text-secondary-2);
 }
+.menu li > a:hover{
+  border-bottom: 2px solid var(--text-secondary-2);
+}
+
 
 
 
