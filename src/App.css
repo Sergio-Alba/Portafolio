@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 body{
-  background-color:var(--bg-dark);
   background-color:var(--bg-light);
-  color: var(--text-principal);
+  color: var(--text-primary);
+}
+.dark{
+  background-color:var(--bg-dark);
+  color: var(--text-primary-dark);
+}
+body.dark a{
+  color: var(--text-primary-dark);
+}
+body.dark  svg{
+  fill:var(--text-primary-dark);
 }
 ul{
   list-style: none;
@@ -15,7 +24,9 @@ a{
   text-decoration: none ;
   color: var(--text-primary);
 }
-
+img{
+  width:200px;
+}
 
 :root{
   --bg-light:#ecf5f8;
@@ -27,4 +38,7 @@ a{
   --text-primary:#081e23;
   --text-secondary:#a971e2;
   --text-secondary-2:#00AAF2;
+  --text-primary-dark:#e7fbff;
+  --text-secondary-dark:#a971e2;
+  --text-secondary-2-dark:#00AAF2;
 }

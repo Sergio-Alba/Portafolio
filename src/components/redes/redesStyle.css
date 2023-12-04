@@ -1,0 +1,14 @@
+.contain-redes-icons{
+  width: 10rem;
+  height: 3.5rem;
+  margin-top:1rem ;
+  display: flex;
+  justify-items: flex-end;
+  justify-content: space-between;
+}
+.link-redes{
+  height: 3.5rem;
+}
+.link-redes > svg {
+  height: 3rem;
+}

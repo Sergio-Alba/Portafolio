@@ -1,0 +1,102 @@
+[
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"7",
+    "img":"../src/assets/img/profile.png",
+    "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png"
+    }
+  }
+]

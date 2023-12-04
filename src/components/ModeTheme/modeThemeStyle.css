@@ -1,10 +1,43 @@
 .mode-theme{
-  height: 2rem;
-  width: 4rem;
-  color: var(--bg-light);
+  height: 1.5rem;
+  width: 3rem;
   border-radius: 1rem;
-  background-color: rgb(15, 13, 30);
+  border:none;
+  background-color:#0f0d1e;
+  outline: none;
+  position: relative;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.mode-theme::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0;
+  right:unset;
+  top: 0;
+  transition: .3s ease-in all;
+  box-shadow: 0px 0px 1.5px 1.5px rgb(1, 1, 12);
+}
+.mode-theme.active{
+  background-color:rgb(234, 115, 4);
+}
+.mode-theme.active::after{
+  right: 0;
+  left: unset;
+}
+.mode-theme> span svg{
+  display: inline-block;
+  height: 1.1rem;
+  width: 1.3rem;
+  color: var(--bg-light);
+  display:inline-block;
+  line-height: 2.2rem;
 }

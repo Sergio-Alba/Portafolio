@@ -14,20 +14,8 @@
   color: var(--bg-card);
   font-size: 2.3rem;
 }
-.contain-redes-icons{
-  width: 50%;
-  height: 3.5rem;
-  margin-top:1rem ;
-  display: flex;
-  justify-items: flex-end;
-  justify-content: space-around;
-}
-.link-redes-footer{
-  height: 3.5rem;
-}
-.link-redes-footer > svg{
-  height: 3rem;
-}
+
+
 .footer > span{
   display: inline-block;
   width: 100%;
