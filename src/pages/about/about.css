@@ -1,0 +1,15 @@
+.contain-about{
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../../assets/img/background_circle.png)repeat ;
+  background-size: 100% ;
+  background-position: 0 1rem;
+  background-repeat: space;
+}
+.description-about{
+  background: var(--bg-glass);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  
+}

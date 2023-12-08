@@ -14,11 +14,30 @@
   color: var(--bg-card);
   font-size: 2.3rem;
 }
-
-
 .footer > span{
   display: inline-block;
   width: 100%;
   text-align: center;
   padding: 1rem;
+}
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .footer{
+    border-top: 1px solid var(--bg-btn);
+  }
+  .container-redes{
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  .redes{
+    font-size: 3rem;
+  }
+  .redes::first-letter{
+    font-size: 3.5rem;
+  }
+}
+
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }

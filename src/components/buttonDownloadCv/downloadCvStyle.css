@@ -1,0 +1,12 @@
+.btn-download{
+  padding: .5rem;
+  border: none;
+  font-family: 'Gilda Display', serif;
+  font-size: 1.5rem;
+  background-color:var(--bg-btn);
+  color: var(--text-primary-dark);
+  cursor:pointer;
+}
+.btn-download:active{
+  background: var(--cl-utilities);;
+}

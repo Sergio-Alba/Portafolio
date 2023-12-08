@@ -3,10 +3,10 @@
 import './input.css'
 
 const Input = ({id,
-                placeholder,
                 required,
                 name,
                 label,
+                placeholder,
                 onChange,
                 onFocus,
                 onBlur,

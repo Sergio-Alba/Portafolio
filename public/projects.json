@@ -1,8 +1,24 @@
 [
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-2.jpg",
     "title":"Calculadora",
+    "description":"Una calculadora no profesional",
+    "technology":{
+      "img1":"../src/assets/Logos/Htm5.png",
+      "img2":"../src/assets/Logos/CSS3.png",
+      "img3":"../src/assets/Logos/JavaScript.png",
+      "img4":"../src/assets/Logos/Tailwind.png",
+      "img5":"../src/assets/Logos/Tailwind.png",
+      "img6":"../src/assets/Logos/Tailwind.png",
+      "img7":"../src/assets/Logos/TypeScript.png",
+      "img8":"../src/assets/Logos/TypeScript.png"
+    }
+  },
+  {
+    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
+    "img":"../src/assets/img/project-2.jpg",
+    "title":"Calculadora científica avalada por mi",
     "description":"Una calculadora no profesional",
     "technology":{
       "img1":"../src/assets/Logos/Htm5.png",
@@ -14,20 +30,7 @@
   },
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
-    "title":"Calculadora",
-    "description":"Una calculadora no profesional",
-    "technology":{
-      "img1":"../src/assets/Logos/Htm5.png",
-      "img2":"../src/assets/Logos/CSS3.png",
-      "img3":"../src/assets/Logos/JavaScript.png",
-      "img4":"../src/assets/Logos/Tailwind.png",
-      "img5":"../src/assets/Logos/TypeScript.png"
-    }
-  },
-  {
-    "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-2.jpg",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
@@ -37,7 +40,7 @@
   },
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-2.png",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
@@ -50,7 +53,7 @@
   },
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-2.jpg",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
@@ -63,7 +66,7 @@
   },
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-3.webp",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
@@ -77,7 +80,7 @@
 
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-1.webp",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
@@ -90,7 +93,7 @@
   },
   {
     "url":"7",
-    "img":"../src/assets/img/profile.png",
+    "img":"../src/assets/img/project-3.webp",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{

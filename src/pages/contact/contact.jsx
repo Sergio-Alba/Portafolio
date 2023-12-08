@@ -1,13 +1,15 @@
+import './contact.css'
 import Input from "../../components/input/input";
+import Textarea from "../../components/textarea/textarea";
 import { useForm } from "../../hooks/useForm"
 
 
 const initialState = {
   name:{value:'', error:'',hasError:true,active:false,name:'name'},
   surname:{value:'', error:'',hasError:true,active:false,name:'name'},
-  email:{value:'',error:'',hasError:true,active:false},
-  affair:{value:'',error:'',hasError:true,active:false},
-  message:{value:'',error:'',hasError:true,active:false},
+  email:{value:'',error:'',hasError:true,active:false,name:'name'},
+  affair:{value:'',error:'',hasError:true,active:false,name:'name'},
+  message:{value:'',error:'',hasError:true,active:false,name:'name'},
   isFormValid:false
 }
 
@@ -31,18 +33,18 @@ const Contact=()=>{
     clearInputs({ formState })
   }
   return (
-    <div>
+    <section className='container-contact'>
       <section className="contact-title">
         <h2>Envíame un mensaje si tienes alguna consulta</h2>
       </section>
-      <section>
-        <form action={onSubmit} className="form">
+      <section className='container-form'>
+        <form action={onSubmit} className="form" method="post">
           <div className="container-inputs">
             <Input
               id='name'
               type='text'
               name='name'
-              placeholder='Juan'
+              placeholder='Matías'
               label='Nombre'
               required={true}
               onFocus={()=>onFocus({name:'name'})}
@@ -102,25 +104,24 @@ const Contact=()=>{
             />
           </div>
           <div className="container-inputs">
-            <Input
-              id='name'
-              type='textarea'
-              name='name'
-              placeholder='Juan'
-              label='Nombre'
+            <Textarea
+              id='message'
+              name='message'
+              label='Mensaje'
+              placeholder='Comentario ...'
               required={true}
-              onFocus={()=>onFocus({name:'name'})}
-              onBlur={()=>onBlur({name:'name'})}
+              onFocus={()=>onFocus({name:'message'})}
+              onBlur={()=>onBlur({name:'message'})}
               onChange={onChange}
-              active={formState.name.active}
-              error={formState.name.error}
-              hasError={formState.name.hasError}
+              active={formState.message.active}
+              error={formState.message.error}
+              hasError={formState.message.hasError}
             />
           </div>
           <button disabled={!formState.isFormValid} className="send-message"  type="submit">Enviar</button>
         </form>
       </section>
-    </div>
+    </section>
   )
 }
 

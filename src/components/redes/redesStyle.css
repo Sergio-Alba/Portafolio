@@ -12,3 +12,21 @@
 .link-redes > svg {
   height: 3rem;
 }
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .contain-redes-icons{
+    width: 15rem;
+    height: 5rem;
+  }
+  .link-redes{
+    height: 100%;
+  }
+  .link-redes > svg {
+    height: 4rem;
+  }
+}
+
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
+}

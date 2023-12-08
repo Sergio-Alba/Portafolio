@@ -1,8 +1,8 @@
 const nameRegex = /^[a-zA-ZÀ-ÿ\s]{2,20}$/;
 const surnameRegex = /^[a-zA-ZÀ-ÿ\s]{2,40}$/;
 const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-const affairRegex = /^[a-zA-Z1-9]{8,20}$/;
-const messageRegex = /^[a-zA-ZÀ-ÿ\s]{4,100}$/;
+const affairRegex = /^[a-zA-ZÀ-ÿ1-9]{3,20}$/;
+const messageRegex = /^[a-zA-Z0-9À-ÿ\s]{5,500}$/;
 
 
 export const validateInput = ({ type, value }) => {
@@ -50,7 +50,7 @@ export const validateInput = ({ type, value }) => {
         case 'affair':
             if(formatValue === "") {
                 hasError = true;
-                error = 'Phone is required';
+                error = 'affair is required';
             } else if(!affairRegex.test(formatValue)) {
                 hasError = true;
                 error = 'affair is invalid';
@@ -62,7 +62,7 @@ export const validateInput = ({ type, value }) => {
         case 'message':
             if(formatValue === "") {
                 hasError = true;
-                error = 'Address is required';
+                error = 'message is required';
             } else if(!messageRegex.test(formatValue)) {
                 hasError = true;
                 error = 'message is invalid';

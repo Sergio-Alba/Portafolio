@@ -1,0 +1,25 @@
+.contain-projects{
+  width: 100vw;
+  text-align: center;
+  background: url(../../assets/img/background_circle.png) repeat ;
+  background-size: 100% ;
+  background-position: 0 1rem;
+}
+.contain-projects >.titles{
+  font-size: 2rem;
+  margin: 2rem 0;
+
+}
+.contain-projects >.titles::first-letter{
+  font-size: 2.5rem;
+}
+.projects{
+  width: 90%;
+  padding: 2rem 0;
+  margin: 0 auto 2rem;
+  background: var(--bg-glass);
+  backdrop-filter: blur(1rem);
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -10,6 +10,7 @@ const  DownloadCv  = ({name}) => {
   };
   return(
     <button 
+      className='btn-download'
       type="button"
       onClick={descargarCV}
       >

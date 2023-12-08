@@ -29,18 +29,18 @@ const Home=()=>{
   return(
     <>
       <section className="container-presentation">
-        <div className="">
-          <h3>Bienvenido mi nombre es</h3>
+        <div className="presentation">
+          <h3 className='title'>Bienvenido me llamo</h3>
           <h1>Sergio Alba</h1>
           <h2>Soy desarrollador web <span>frontend Developer</span> </h2>
-          <Redes/>
+            <Redes/>
           <DownloadCv name='Descargar CV'/>
         </div>
-        <img   src={images.profile} alt='' />
+        <img className='presentation-image'  src={images.profile} alt='' />
       </section>
       <section className="container-skills">
         <h2 className="titles">Mis Skills</h2>
-        <div className="container-skills">
+        <div className="container-technologies">
           <img src={logoHtml} alt="Logo Html5" />
           <img src={logoCss} alt="Logo Css 3" />
           <img src={logoBootstrap} alt="Logo Bootstrap" />
@@ -56,13 +56,15 @@ const Home=()=>{
       </section>
       <section className="container-projects">
         <h4 className='titles'> Mis proyectos</h4>
-        {loadingProjects && <Loader/>}
-        {errorProjects && <h2> {errorProjects} </h2>}
-        {projects.slice(0,3).map((project) => (
-              <Card key={project.id} {...project}/>
-            ))
-        }
-        <Link to='/Projects'>
+        <div className="projects-contain">
+            {loadingProjects && <Loader/>}
+          {errorProjects && <h2> {errorProjects} </h2>}
+          {projects.slice(0,3).map((project) => (
+                <Card key={project.id} {...project}/>
+              ))
+          }
+        </div>
+        <Link className='link-projects' to='/Projects'>
           Ver mas Proyectos
         </Link>
       </section>
