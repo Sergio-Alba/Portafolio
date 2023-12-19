@@ -1,7 +1,7 @@
 .contain-input{
   display: flex;
   flex-direction: column;
-  label{
+  & label{
     height: 2rem;
     display: inline-block;
     width: max-content;
@@ -39,4 +39,28 @@
     right: 1rem;
     z-index: 1;
   }
+}
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .contain-input{
+    & label{
+      font-size: 1.4rem;
+    }
+    label::first-letter{
+      font-size: 1.5rem;
+    }
+    input{
+      font-family: 'Gilda Display', serif;
+      font-size: 1.4rem;
+      padding: .3rem .5rem;
+    }
+    .input-error{
+      color: rgb(188, 57, 88);
+      font-size: 1rem;
+    }
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }

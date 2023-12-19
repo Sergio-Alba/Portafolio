@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './downloadCvStyle.css'
-import curriculum from '../../../public/frontend.pdf'
+import curriculum from '../../assets/curriculum/frontend.pdf'
 const  DownloadCv  = ({name}) => {
   const descargarCV = () => {
     const link = document.createElement('a');

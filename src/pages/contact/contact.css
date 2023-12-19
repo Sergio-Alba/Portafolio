@@ -33,16 +33,16 @@ h2{
 .container-inputs{
   width: 100%;
 }
-.send-message:disabled{
+.send-form:disabled{
   background: rgb(82, 82, 82);
   color: azure;
   box-shadow: none;
   border: 1px solid #646464;
 }
-.send-message:disabled:active{
+.send-form:disabled:active{
   box-shadow: none;
 }
-.send-message{
+.send-form{
   width: 8rem ;
   margin: 2rem 0;
   padding: .5rem ;
@@ -53,6 +53,39 @@ h2{
   font-size: 1rem;
   color: var(--text-primary);
 }
-.send-message:active{
+.send-form:active{
   box-shadow:-2px -2px 4px 0px #ffffff9b inset, 2px 2px 8px 0px #ffffffa7 inset;
+}
+/** media query tablet*/
+@media screen and (min-width:767px){
+  
+  .contact-title{
+    width: 90%;
+    padding: 1.5rem 0 ;
+    & h2{
+    font-size:1.3rem;
+    font-weight: 400;
+    }
+  }
+  .container-form{
+    width: 70%;
+  }
+  .form{
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1.3rem;
+  }
+  .container-inputs{
+    width: 90%;
+  }
+  .send-form{
+    width: 10rem ;
+    margin: 2rem 0;
+    padding: 1rem .5rem;
+    font-size: 1.3rem;
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }

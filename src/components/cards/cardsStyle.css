@@ -1,6 +1,6 @@
 .card{
   width: 18rem;
-  height: 30rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,11 +9,12 @@
 }
 .card-image{
   width: 120%;
+  height: 11rem;
   object-fit: contain;
 }
 .contain-description{
   width: 100%;
-  height: 100%;
+  height: 15rem;
   background:var(--bg-card);
   border-radius: 2rem 2rem 0 0;
   text-align:center;
@@ -21,37 +22,66 @@
   top: -2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .title-page{
-  font-size: 1.5rem;
-  font-weight: 600;
+  padding: .5rem .5rem 0;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 .description-page{
+  font-weight: 100;
+  font-size: .8rem;
   color: var(--bg-glass-2);
 }
 .technology-create-title{
   font-size: 1rem;
+  font-weight: 100;
 }
 .technology-create{
-  height: 6rem;
-  padding: .5rem;
+  height: 4rem;
+  padding:0 .5rem ;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: .3rem;
   justify-content: center;
 }
 .technology-image{
-  width: 2rem;
+  width: 1.7rem;
   object-fit: contain;
 } 
 .link-pages{
   display: inline-block;
   width: 4rem;
   height: 2rem;
-  padding: .5rem;
+  padding: .3rem;
+  margin-bottom: .4rem;
   background: var(--text-secondary-2-dark);
+  &:hover{
+    scale: 1.09;
+    color: var(--text-primary-dark);
+    border-radius: .3rem;
+  }
+  &:active{
+    background: #234f73;
+  }
+}
+/** media query tablet*/
+@media screen and (min-width:767px){
+  
+  .technology-image{
+    width: 2rem;
+    object-fit: contain;
+  } 
+  .link-pages{
+    font-size: 1.2rem;
+    background: var(--text-secondary-2-dark);
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }

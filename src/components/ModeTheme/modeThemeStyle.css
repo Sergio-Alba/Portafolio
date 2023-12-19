@@ -39,3 +39,22 @@
   color: var(--bg-light);
   line-height: 2.2rem;
 }
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .mode-theme{
+    height: 2rem;
+    width: 4rem;
+  }
+  .mode-theme::after{
+    height: 2rem;
+    width: 2rem;
+  }
+  .mode-theme> span svg{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
+}

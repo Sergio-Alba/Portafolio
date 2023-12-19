@@ -118,7 +118,7 @@ const Contact=()=>{
               hasError={formState.message.hasError}
             />
           </div>
-          <button disabled={!formState.isFormValid} className="send-message"  type="submit">Enviar</button>
+          <button disabled={!formState.isFormValid} className="send-form"  type="submit">Enviar</button>
         </form>
       </section>
     </section>

@@ -100,6 +100,14 @@
   font-size: 1.3rem;
   font-weight: 200;
   color: var(--text-primary-dark);
+  &:hover{
+    scale: 1.1;
+    border-radius: .3rem;
+  }
+  &:active{
+    scale: 1;
+    background: #234f73;
+  }
 }
 /** media query tablet*/
 @media screen and (min-width:767px){
@@ -150,31 +158,11 @@
       width: 5rem;
     }
   }
-  .container-projects{
-    width: 100vw;
-    padding: 2rem 0;
-    background: url(../../assets/img/background_circle.png) no-repeat ;
-    background-size: 80% ;
-    background-position: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .projects-contain{
     gap: 2rem;
   }
-  .projects-contain{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
   .link-projects{
-    background-color:var(--text-secondary-2-dark);
-    padding: 1rem;
-    font-size: 1.3rem;
-    font-weight: 200;
-    color: var(--text-primary-dark);
+    font-size: 1.5rem;
   }
 }
 

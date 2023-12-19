@@ -1,8 +1,8 @@
-.contain-about{
+.container-about{
   width: 90vw;
   margin: 0 auto;
   text-align: center;
-  background: url(../../assets/img/background_circle.png)repeat ;
+  background: url(../../assets/img/background_circle.png) ;
   background-size: 100% ;
   background-position: 0 1rem;
   background-repeat: space;
@@ -11,5 +11,46 @@
   background: var(--bg-glass);
   padding: 1.5rem;
   margin: 1rem 0;
-  
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contain-my-skills{
+  margin: 2rem 1rem;
+  & h2{
+    margin: 2rem 0 ;
+    font-size: 1.8rem;
+    font-weight:600;
+  }
+
+}
+.container-technologies{
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+.title-technologies{
+  background-color: rgba(164, 26, 238, 0.142);
+  padding: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.skills{
+  background-color: var(--bg-glass);
+  text-align: start;
+  padding: 1rem;
+}
+.tech{
+  font-size: 1.2rem;
+  padding: .2rem;
+      }
+
+
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .description-about{
+    font-size: 1.3rem;
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }

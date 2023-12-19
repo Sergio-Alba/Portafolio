@@ -12,6 +12,8 @@ const Projects=()=>{
     loading:loadingProjects,
     error:errorProjects,
   }=useFetch(API_URL.PROJECTS.url,API_URL.PROJECTS.config)
+console.log(API_URL.PROJECTS)
+
   return(
       <section className="contain-projects">
         <h1 className="titles">Proyectos</h1>

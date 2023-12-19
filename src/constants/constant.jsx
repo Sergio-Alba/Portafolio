@@ -1,4 +1,4 @@
-export const BASE_URL = '../../public/projects.json'
+export const BASE_URL = '/projects.json'
 
 export const API_URL = {
   PROJECTS: {

@@ -6,9 +6,7 @@
   background-position: 0 1rem;
 }
 .contain-projects >.titles{
-  font-size: 2rem;
   margin: 2rem 0;
-
 }
 .contain-projects >.titles::first-letter{
   font-size: 2.5rem;
@@ -19,7 +17,19 @@
   margin: 0 auto 2rem;
   background: var(--bg-glass);
   backdrop-filter: blur(1rem);
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+}
+/** media query tablet*/
+@media screen and (min-width:767px){
+  .projects{
+    gap: 3rem;
+  }
+}
+/** media query laptop*/
+@media  screen and (min-width:1200px) {
+
 }
