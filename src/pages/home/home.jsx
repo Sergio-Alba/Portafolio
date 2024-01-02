@@ -38,6 +38,20 @@ const Home=()=>{
         </div>
         <img className='presentation-image'  src={images.profile} alt='' />
       </section>
+      <section className="container-projects">
+        <h4 className='titles'> Mis proyectos</h4>
+        <div className="projects-contain">
+            {loadingProjects && <Loader/>}
+          {errorProjects && <h2> {errorProjects} </h2>}
+          {projects.slice(0,3).map((project) => (
+                <Card key={project.id} {...project}/>
+              ))
+          }
+        </div>
+        <Link className='link-projects' to='/Projects'>
+          Ver mas Proyectos
+        </Link>
+      </section>
       <section className="container-skills">
         <h2 className="titles">Mis Skills</h2>
         <div className="container-technologies">
@@ -53,20 +67,6 @@ const Home=()=>{
           <img src={logoFirebase} alt="Logo Firebase" />
           <img src={logoGit} alt="Logo git" />
         </div>
-      </section>
-      <section className="container-projects">
-        <h4 className='titles'> Mis proyectos</h4>
-        <div className="projects-contain">
-            {loadingProjects && <Loader/>}
-          {errorProjects && <h2> {errorProjects} </h2>}
-          {projects.slice(0,3).map((project) => (
-                <Card key={project.id} {...project}/>
-              ))
-          }
-        </div>
-        <Link className='link-projects' to='/Projects'>
-          Ver mas Proyectos
-        </Link>
       </section>
     </>
   )

@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <Header logo={images.logo}/>
-      <Router/>
+        <div className='contain-pages'>
+          <Router/>
+        </div>
       <Footer />
     </div>
   )

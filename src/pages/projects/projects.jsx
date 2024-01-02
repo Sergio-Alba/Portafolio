@@ -15,6 +15,7 @@ const Projects=()=>{
 console.log(API_URL.PROJECTS)
 
   return(
+    <div className='contain-page'>
       <section className="contain-projects">
         <h1 className="titles">Proyectos</h1>
           <section className="projects">
@@ -26,6 +27,7 @@ console.log(API_URL.PROJECTS)
             }
           </section>
       </section>
+    </div>
   )
 }
 

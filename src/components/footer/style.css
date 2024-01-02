@@ -39,5 +39,14 @@
 
 /** media query laptop*/
 @media  screen and (min-width:1200px) {
-
+  .footer{
+    border-top:0;
+  }
+  .redes{
+    font-size: 2.5rem;
+  }
+  .redes::first-letter{
+    font-size: 3rem;
+  }
 }
+

@@ -53,3 +53,20 @@ img{
   --text-secondary-dark:#a971e2;
   --text-secondary-2-dark:#00AAF2;
 }
+
+.contain-pages{
+  width: 100vw;
+}
+@media screen and (min-width:767px){
+  .contain-pages{
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+@media  screen and (min-width:1200px){
+  .contain-pages{
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+

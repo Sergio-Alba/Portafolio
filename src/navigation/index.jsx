@@ -9,7 +9,7 @@ import Error404 from "../pages/error/error404"
 
 function Router(){
   return (
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/About" element={<About/>}/>

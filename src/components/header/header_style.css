@@ -148,6 +148,52 @@
 }
 
 /** media query laptop*/
-@media  screen and (min-width:1080px) {
-  
+@media  screen and (min-width:1200px) {
+  .header{
+    height:10rem;
+  }
+  .header-section-1{
+    height: 8rem;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+  .container-logo{
+    margin-top: .5rem;
+    height: 90%;
+  }
+  .side-menu{
+    display: none;
+  }
+  .hamb{  
+    display: none;
+  }
+  .nav{
+    width: 50%;
+    height: 5rem;
+    position: relative;
+    top:0;
+    background:none;
+    backdrop-filter:none;
+    border-radius:0;
+    overflow: hidden;
+    max-height:max-content;
+    transition: none;
+  }
+  .menu{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .menu li{
+    width: 8rem;
+    font-size: 1.2rem;  }
+  .menu li .active{
+    color: var(--text-secondary-2);
+  }
+  .header-section-2{
+    margin: .5rem;
+    justify-content: end;
+  }
 }
