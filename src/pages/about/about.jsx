@@ -13,8 +13,8 @@ const About=()=>{
       <section className="contain-my-skills">
         <h2>Mis Skills</h2>
         <ul className="container-my-technologies">
-          <h3 className="title-technologies">Tecnologías</h3>
-          <li className="skills">
+          <li className="skills technologies">
+            <h3 className="title-technologies">Tecnologías</h3>
             <p className="tech">Html5</p>
             <p className="tech">Css</p>
             <p className="tech">Bootstrap</p>
@@ -24,13 +24,13 @@ const About=()=>{
             <p className="tech">TypeScript</p>
             <p className="tech">React</p>
           </li>
-          <h3 className="title-technologies">Control de versiones</h3>
-          <li className="skills">
+          <li className="skills versions">
+            <h3 className="title-technologies">Control de versiones</h3>
             <p className="tech">Git</p>
             <p className="tech">GitHub</p>
           </li>
-          <h3 className="title-technologies">Metodologías Ágiles </h3>
-          <li className="skills">
+          <li className="skills methodology">
+            <h3 className="title-technologies">Metodologías Ágiles </h3>
             <p className="tech">Scrum</p>
           </li>
         </ul>

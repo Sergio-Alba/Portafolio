@@ -7,16 +7,15 @@
 }
 .header-section-1{
   height: 5rem;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: rgba(8, 46, 38, 0.07);
   backdrop-filter: blur(20px);
 }
 .container-logo{
-  margin-top: .5rem;
   height: 100%;
 }
 .logo{
@@ -111,15 +110,12 @@
 
 
 /** media query tablet*/
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .header{
     height:10rem;
   }
   .header-section-1{
     height: 8rem;
-  }
-  .container-logo{
-    margin-top: 1.5rem;
   }
   .hamb{  
     margin-right: 4rem;
@@ -141,6 +137,7 @@
     top:8rem;
   }
   .menu li{
+    gap: 0;
     font-size: 2rem;
     font-weight: 400;
     padding: 1.5rem;
@@ -148,21 +145,26 @@
 }
 
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
   .header{
-    height:10rem;
+    height:8rem;
+    width: 98vw;
+    margin: 0 auto;
   }
   .header-section-1{
-    height: 8rem;
+    height: 6rem;
     width:100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    padding: 0 2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 ;
+
   }
   .container-logo{
-    margin-top: .5rem;
     height: 90%;
+    margin-left: 2rem;
   }
   .side-menu{
     display: none;
@@ -171,8 +173,8 @@
     display: none;
   }
   .nav{
-    width: 50%;
     height: 5rem;
+    width: min-content;
     position: relative;
     top:0;
     background:none;
@@ -183,17 +185,21 @@
     transition: none;
   }
   .menu{
+    width: 100%;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: none;
   }
   .menu li{
-    width: 8rem;
+    width: 7rem;
+    min-width: 7rem;
+    padding: .5rem;
     font-size: 1.2rem;  }
   .menu li .active{
     color: var(--text-secondary-2);
   }
   .header-section-2{
-    margin: .5rem;
+    width: 100%;
     justify-content: end;
+    padding-right: 2rem;
   }
 }

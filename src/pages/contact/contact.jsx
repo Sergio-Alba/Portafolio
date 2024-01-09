@@ -2,6 +2,8 @@ import './contact.css'
 import Input from "../../components/input/input";
 import Textarea from "../../components/textarea/textarea";
 import { useForm } from "../../hooks/useForm"
+import images from '../../assets/images';
+import Redes from '../../components/redes/redes';
 
 
 const initialState = {
@@ -24,7 +26,6 @@ const Contact=()=>{
   const onFocus = ({ name }) => {
     inputFocus({ name })
   }
-
   const onBlur = ({ name }) => {
     inputBlur({ name })
   }
@@ -34,17 +35,20 @@ const Contact=()=>{
   }
   return (
     <section className='container-contact'>
-      <section className="contact-title">
-        <h2>Envíame un mensaje si tienes alguna consulta</h2>
-      </section>
       <section className='container-form'>
+        <div className="contain-img-form">
+          <section className="contact-title">
+            <h2>Contácteme  por mis redes o envíame un correo.</h2>
+          </section>
+          <Redes/>
+          <img className='img-form' src={images.frame} alt="frame" />
+        </div>
         <form action={onSubmit} className="form" method="post">
           <div className="container-inputs">
             <Input
               id='name'
               type='text'
               name='name'
-              placeholder='Matías'
               label='Nombre'
               required={true}
               onFocus={()=>onFocus({name:'name'})}
@@ -60,7 +64,6 @@ const Contact=()=>{
               id='surname'
               type='text'
               name='surname'
-              placeholder='Stark'
               label='Apellido'
               required={true}
               onFocus={()=>onFocus({name:'surname'})}
@@ -76,7 +79,6 @@ const Contact=()=>{
               id='email'
               type='email'
               name='email'
-              placeholder='Juan@gmail.com'
               label='Correo Electrónico'
               required={true}
               onFocus={()=>onFocus({name:'email'})}
@@ -92,7 +94,6 @@ const Contact=()=>{
               id='affair'
               type='text'
               name='affair'
-              placeholder='Asunto'
               label='Asunto'
               required={true}
               onFocus={()=>onFocus({name:'affair'})}
@@ -108,7 +109,6 @@ const Contact=()=>{
               id='message'
               name='message'
               label='Mensaje'
-              placeholder='Comentario ...'
               required={true}
               onFocus={()=>onFocus({name:'message'})}
               onBlur={()=>onBlur({name:'message'})}

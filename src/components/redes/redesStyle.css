@@ -13,7 +13,7 @@
   height: 3rem;
 }
 /** media query tablet*/
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .contain-redes-icons{
     width: 15rem;
     height: 5rem;
@@ -27,6 +27,6 @@
 }
 
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
 
 }

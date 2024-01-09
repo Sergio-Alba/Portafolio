@@ -1,10 +1,7 @@
 .container-about{
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  background: url(../../assets/img/background_circle.png) ;
-  background-size: 100% ;
-  background-position: 0 1rem;
   background-repeat: space;
 }
 .description-about{
@@ -18,14 +15,17 @@
   margin: 2rem 1rem;
   & h2{
     margin: 2rem 0 ;
-    font-size: 1.8rem;
-    font-weight:600;
+    font-size: 2rem;
+    font-weight:bold;
+    background: -webkit-linear-gradient(45deg,#8103ff 40%, #0f899489 ,#26edff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 }
-.container-technologies{
+.container-my-technologies{
     width: 100%;
-    margin-top: 1.5rem;
+    display: grid;
   }
 .title-technologies{
   background-color: rgba(164, 26, 238, 0.142);
@@ -39,18 +39,67 @@
   padding: 1rem;
 }
 .tech{
+  margin-left:1rem ;
+  padding: .3rem 0 .3rem .5rem;
   font-size: 1.2rem;
-  padding: .2rem;
       }
 
 
 /** media query tablet*/
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .description-about{
     font-size: 1.3rem;
   }
 }
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
+  .description-about{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .contain-my-skills{
+    margin: 2rem 1rem;
+    & h2{
+      margin: 2rem 0 ;
+      font-size: 1.8rem;
+      font-weight:600;
+    }
+  
+  }
+  .container-my-technologies{
+      width: 70%;
+      margin: 0 auto;
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr ; 
+      gap: 9px; 
+      grid-template-areas: 
+        "skills versions"
+        "skills versions"
+        "skills methodology"
+        "skills methodology"; 
+        }
 
+  .title-technologies{
+    background-color: rgba(164, 26, 238, 0.142);
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .skills{
+    grid-area: skills;
+    background-color: var(--bg-glass);
+    text-align: start;
+    padding: 0;
+  }
+  .versions{
+    grid-area: versions;
+  }
+  .methodology{
+    grid-area: methodology;
+  }
+  .tech{
+    font-size: 1.2rem;
+    }
 }

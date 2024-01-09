@@ -34,9 +34,9 @@ const Home=()=>{
           <h1>Sergio Alba</h1>
           <h2>Soy desarrollador web <span>frontend Developer</span> </h2>
             <Redes/>
-          <DownloadCv name='Descargar CV'/>
+            <DownloadCv name='Descargar CV'/>
         </div>
-        <img className='presentation-image'  src={images.profile} alt='' />
+        <img className='presentation-image'  src={images.profile} alt='imagen de perfil' />
       </section>
       <section className="container-projects">
         <h4 className='titles'> Mis proyectos</h4>

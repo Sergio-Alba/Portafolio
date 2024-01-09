@@ -6,7 +6,6 @@ const Input = ({id,
                 required,
                 name,
                 label,
-                placeholder,
                 onChange,
                 onFocus,
                 onBlur,
@@ -17,13 +16,10 @@ const Input = ({id,
               }) => { 
   return(
     <section className="contain-input">
-      <label htmlFor={id}>
-        {label}
-      </label>
       <input 
+        className='input'
         type='text'
         id={id}
-        placeholder={placeholder}
         required={required}
         name={name}
         value={value}
@@ -31,6 +27,9 @@ const Input = ({id,
         onBlur={onBlur}
         onFocus={onFocus}
       />
+      <label className='label' htmlFor={id}>
+        {label}
+      </label>
       {hasError && (
         <span className="input-error">
           {error}
@@ -40,3 +39,4 @@ const Input = ({id,
     )
 }
 export default Input;
+

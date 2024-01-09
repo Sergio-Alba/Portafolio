@@ -1,66 +1,65 @@
-.contain-input{
+
+
+.contain-input {
+  height: 3rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  & label{
-    height: 2rem;
-    display: inline-block;
-    width: max-content;
-    font-size: 1.1rem;
-    font-weight: 400;
-  }
-  label::first-letter{
-    color: var(--text-secondary);
-    font-weight: 800;
-    font-size: 1.3rem;
-  }
-  input{
-    background: rgba(0, 0, 0, 0.114);
-    backdrop-filter: blur(5px);
-    border: none;
-    border-radius: .5rem;
-    height: 3rem;
-    letter-spacing: .1rem;
-    padding: .3rem;
-    outline: none;
-  }
-  input:focus{
-    background:#540ba320;
-    border-bottom: 2px solid #8e32d4a2;
-  }
-  .input-error{
-    width: 100%;
-    height: 0;
-    display: inline-block;
-    color: rgb(188, 57, 116);
-    font-size: .8rem;
-    text-align: end;
-    position: relative;
-    bottom: 2rem;
-    right: 1rem;
-    z-index: 1;
-  }
+  justify-content: center;
+  position: relative;
+}
+.contain-input .label {
+  font-size: 1.1rem;
+  padding-left: 10px;
+  position: absolute;
+  top:1rem;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 2.4rem;
+  padding-inline-start: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px #bb77ffa3,
+  -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.contain-input .input:valid ~ .label,
+.contain-input .input:focus ~ .label {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translateY(-35px);
+}
+
+.contain-input .input:valid,
+.contain-input .input:focus {
+  box-shadow: 1px 1px 10px  #21ecffae,
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px #01555dbb,
+  inset -1px -1px 6px #00daeea7;
+}
+.input-error{
+  width: 100%;
+  height: 0;
+  display: inline-block;
+  color: rgb(188, 57, 116);
+  font-size: .8rem;
+  text-align: end;
+  position: relative;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 1;
 }
 /** media query tablet*/
-@media screen and (min-width:767px){
-  .contain-input{
-    & label{
-      font-size: 1.4rem;
-    }
-    label::first-letter{
-      font-size: 1.5rem;
-    }
-    input{
-      font-family: 'Gilda Display', serif;
-      font-size: 1.4rem;
-      padding: .3rem .5rem;
-    }
-    .input-error{
-      color: rgb(188, 57, 88);
-      font-size: 1rem;
-    }
-  }
+@media screen and (min-width:768px){
+  
 }
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
 
 }

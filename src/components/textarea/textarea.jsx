@@ -16,20 +16,19 @@ const Textarea = ({id,
 }) => { 
   return(
     <section className="contain-textarea">
-      <label htmlFor={id}>
-        {label}
-      </label>
       <textarea
         maxLength={maxLength}
         id={id}
         name={name}              
-        placeholder={placeholder}
         required={required}
         onFocus={onFocus}
         onBlur={onBlur}
         onChange={onChange}
       >
       </textarea>
+      <label htmlFor={id}>
+        {label}
+      </label>
         {hasError && (
           <span className="input-error">
             {error}

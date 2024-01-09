@@ -7,13 +7,13 @@ import images from './assets/images';
 
 function App() {
   return (
-    <div>
+    <>
       <Header logo={images.logo}/>
         <div className='contain-pages'>
           <Router/>
         </div>
       <Footer />
-    </div>
+    </>
   )
 }
 

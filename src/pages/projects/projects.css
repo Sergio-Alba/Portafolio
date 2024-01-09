@@ -1,9 +1,6 @@
 .contain-projects{
-  width: 100vw;
+  width: 100%;
   text-align: center;
-  background: url(../../assets/img/background_circle.png) repeat ;
-  background-size: 100% ;
-  background-position: 0 1rem;
 }
 .contain-projects >.titles{
   margin: 2rem 0;
@@ -15,21 +12,27 @@
   width: 90%;
   padding: 2rem 0;
   margin: 0 auto 2rem;
-  background: var(--bg-glass);
-  backdrop-filter: blur(1rem);
+  /* background: var(--bg-glass); */
+  backdrop-filter: blur(.2rem);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 /** media query tablet*/
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .projects{
     gap: 3rem;
   }
 }
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
-
+@media  screen and (min-width:1024px) {
+  .contain-projects{
+  width: 100%;
+  }
+  .projects{
+    width: 100%;
+    gap:2rem;
+  }
 }

@@ -1,7 +1,4 @@
 .container-presentation{
-  background: url(../../assets/img/background_circle.png) no-repeat;
-  background-size: 100% ;
-  background-position: 0 4rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,11 +49,10 @@
 }
 .container-skills{
   width: 100%;
-  background: url(../../assets/img/background_circle.png) no-repeat center;
-  background-size: 100% ;
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(3px);
 }
 .container-technologies{
   width: 100%;
@@ -76,9 +72,6 @@
 .container-projects{
   width: 100%;
   padding: 2rem 0;
-  background: url(../../assets/img/background_circle.png) no-repeat ;
-  background-size: 100% ;
-  background-position: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,12 +101,8 @@
   }
 }
 /** media query tablet*/
-@media screen and (min-width:767px){
-  .container-presentation{
-    background: url(../../assets/img/background_circle.png) no-repeat;
-    background-size: 100% ;
-    background-position:center;
-  }
+@media screen and (min-width:768px){
+  
   .presentation{
     gap: 3rem;
     h1{
@@ -164,21 +153,21 @@
   }
 }
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
   .container-presentation{
     width:100%;
-    background: url(../../assets/img/background_circle.png) no-repeat;
-    background-size: 60% ;
-    background-position:center;
+    height: 70vh;
     flex-direction: row;
+    justify-content: center;
   }
   .presentation{
+    width: 50%;
     gap: 1rem;
     h1{
-      font-size: 3rem;
+      font-size: 4.5rem;
     }
     h2{
-      font-size:1.3rem;
+      font-size:2.5rem;
       span{
         color: var(--text-secondary-2);
         font-weight: 800;
@@ -186,15 +175,15 @@
     }
   }
   .title{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .title::first-letter{
     color: var(--text-secondary);
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .presentation-image{
-    margin: 4rem 3rem ;
-    width: 45%;
+    margin: 4rem ;
+    max-width: 25rem;
   }
   .titles{
     font-size: 2rem;
@@ -205,14 +194,13 @@
     font-size: 3rem;
   }
   .container-skills{
-    background-size: 90% ;
-    width: 100%;
-    background-size: 60% ;
+    width: 80%;
+    margin:0 auto ;
+    background: none;
   }
   .container-projects{
     width: 100%;
-    background-size: 70% ;
-    background-position: center;
+    background:none;
     gap: 3rem;
   }
   .projects-contain{

@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;0,800;1,400;1,800&family=Cinzel&family=Gilda+Display&display=swap');
 
 *{
   padding: 0;
@@ -8,8 +9,13 @@
 }
 body{
   background-color:var(--bg-light);
-  color: var(--text-primary);
+  color-scheme: var(--text-primary);
   font-family: 'Gilda Display', serif;
+  .contain-pages{
+    background: url(/public/f2.png) repeat;
+    background-size: 100% ;
+    background-position: top;
+  }
 }
 .dark{
   background-color:var(--bg-dark);
@@ -20,11 +26,13 @@ body{
   svg{
     fill:var(--text-primary-dark);
   }
-  input {
-    color: #17b1d0;
+  input , textarea {
+    color: #e7fbff;
   }
-  textarea{
-    color: #17b1d0;
+  .contain-pages{
+    background: url(/public/ft.png) repeat;
+    background-size: 100% ;
+    background-position: top;
   }
 }
 ul{
@@ -39,7 +47,7 @@ img{
 }
 
 :root{
-  --bg-light:#ecf5f8;
+  --bg-light:#ebfaff;
   --bg-dark:#010d10;
   --bg-card:#cc99ff;
   --bg-btn:#099ede;
@@ -56,14 +64,15 @@ img{
 
 .contain-pages{
   width: 100vw;
+  
 }
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .contain-pages{
     width: 100vw;
     margin: 0 auto;
   }
 }
-@media  screen and (min-width:1200px){
+@media  screen and (min-width:1024px){
   .contain-pages{
     width: 80vw;
     margin: 0 auto;

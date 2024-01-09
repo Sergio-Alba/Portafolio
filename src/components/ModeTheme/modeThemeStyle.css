@@ -40,7 +40,7 @@
   line-height: 2.2rem;
 }
 /** media query tablet*/
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
   .mode-theme{
     height: 2rem;
     width: 4rem;
@@ -55,7 +55,7 @@
   }
 }
 /** media query laptop*/
-@media  screen and (min-width:1200px) {
+@media  screen and (min-width:1024px) {
   .mode-theme{
     height: 1.5rem;
     width: 3rem;

@@ -3,7 +3,7 @@
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
     "img":"../src/assets/img/project-1.webp",
     "title":"Calculadora",
-    "description":"Una calculadora no profesional",
+    "description":"Una calculadora no profesional  para una prueba de funcionamiento",
     "technology":{
       "img1":"../src/assets/Logos/Htm5.png",
       "img2":"../src/assets/Logos/CSS3.png",
@@ -40,7 +40,7 @@
   },
   {
     "url":"https://es.react.dev/reference/react-dom/components#all-html-components",
-    "img":"../src/assets/img/project-2.png",
+    "img":"../src/assets/img/project-2.jpg",
     "title":"Calculadora",
     "description":"Una calculadora no profesional",
     "technology":{
